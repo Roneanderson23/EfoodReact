@@ -2,22 +2,17 @@ import Product from '../Product'
 
 import { Container, List } from './styles'
 
-type Props = {
-  title: string
-}
-
-const ProductsList = ({ title }: Props) => (
-  <Container>
-    <div className="container">
-      <h2>{title}</h2>
+const ProductsList = () => (
+  <>
+    <Container>
       <List>
         <Product />
         <Product />
         <Product />
         <Product />
       </List>
-    </div>
-  </Container>
+    </Container>
+  </>
 )
 
 export default ProductsList

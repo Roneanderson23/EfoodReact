@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const CardFooter = styled.div`
   width: 100%;
   height: 298px;
+  padding-top: 40px;
 `
 
 export const Descricao = styled.p`
