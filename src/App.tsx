@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+import Hero from './components/Hero'
+
+// import Product from './components/Product'
+import { GlobalCss } from './styles'
+import ProductsList from './components/ProductsList'
+import Footer from './components/Footer'
+
+const rotas = createBrowserRouter([
+  {
+    path: '/',
+    element: (
+      <>
+        {/* <Product /> */}
+        {/* <ProductsList title="destaque" /> */}
+      </>
+    )
+  }
+])
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <GlobalCss />
+      <div className="container">
+        <Hero />
+        <Footer />
+      </div>
+      <RouterProvider router={rotas} />
+    </>
+  )
 }
 
-export default App;
+export default App
