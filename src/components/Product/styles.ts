@@ -5,6 +5,7 @@ import { TagContainer } from '../Tag/styles'
 export const Card = styled.div`
   background: ${cores.branca};
   margin-bottom: 48px;
+  position: relative;
 
   ${TagContainer} {
     margin-right: 8px;
@@ -62,4 +63,10 @@ export const Button = styled.button`
   cursor: pointer;
   background-color: ${cores.rosa};
   color: ${cores.corTituloEbotaoCard};
+`
+
+export const Infos = styled.div`
+  position: absolute;
+  top: 16px;
+  right: 16px;
 `

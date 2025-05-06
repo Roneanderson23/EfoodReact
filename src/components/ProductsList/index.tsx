@@ -1,15 +1,27 @@
+import Efood from '../../models'
 import Product from '../Product'
 
 import { Container, List } from './styles'
 
-const ProductsList = () => (
+export type Props = {
+  efood: Efood[]
+}
+
+const ProductsList = ({ efood }: Props) => (
   <>
     <Container>
       <List>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {efood.map((efood) => (
+          <Product
+            key={efood.id}
+            nota={efood.nota}
+            title={efood.title}
+            infos={efood.infos}
+            image={efood.image}
+            description={efood.description}
+            button={efood.button}
+          />
+        ))}
       </List>
     </Container>
   </>
