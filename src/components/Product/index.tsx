@@ -24,7 +24,9 @@ const Product = ({ title, infos, image, description, button, nota }: Props) => (
     <img src={image} />
     <Infos>
       {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
+        <Tag size="big" key={info}>
+          {info}
+        </Tag>
       ))}
     </Infos>
     <SubCard>
