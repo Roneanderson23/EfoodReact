@@ -15,6 +15,7 @@ export const GlobalCss = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   font-family: Roboto, san-serif;
+  list-style: none;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
 }
 
   .container {
-    max-width: 2031px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
   }

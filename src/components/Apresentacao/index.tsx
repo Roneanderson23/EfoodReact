@@ -1,11 +1,15 @@
-import { Imagem, Link, LinkTwo } from './styles'
+import { Imagem } from './styles'
 
 import img from '../../assets/img/fundo.png'
 
 const Card = () => (
   <Imagem style={{ backgroundImage: `url(${img})` }}>
-    <Link>Italiana</Link>
-    <LinkTwo>La Dolce Vita Trattoria</LinkTwo>
+    <div className="container">
+      <div>
+        <h2>Italiana</h2>
+      </div>
+      <h3>La Dolce Vita Trattoria</h3>
+    </div>
   </Imagem>
 )
 

@@ -1,19 +1,17 @@
 import { BrowserRouter } from 'react-router-dom'
 
-import Hero from './components/Hero'
 import { GlobalCss } from './styles'
 
 import Rotas from './routes'
 
 function App() {
   return (
-    <BrowserRouter>
-      <GlobalCss />
-      <div className="container">
-        <Hero />
-      </div>
-      <Rotas />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <GlobalCss />
+        <Rotas />
+      </BrowserRouter>
+    </>
   )
 }
 

@@ -6,6 +6,8 @@ import shushi from '../../assets/img/imagem.png'
 import macarrao from '../../assets/img/macarrao.png'
 import logoNota from '../../assets/img/nota.png'
 
+import Header from '../../components/Header'
+
 const restaurante: Efood[] = [
   {
     id: 1,
@@ -71,6 +73,7 @@ const restaurante: Efood[] = [
 
 const Home = () => (
   <>
+    <Header />
     <ProductsList efood={restaurante} />
     <Footer />
   </>
