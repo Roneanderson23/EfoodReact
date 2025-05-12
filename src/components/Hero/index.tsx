@@ -20,13 +20,3 @@ const Hero = () => (
   </CardHeader>
 )
 export default Hero
-
-// const Hero = () => (
-//   <CardHeader style={{ backgroundImage: `url(${heroImg})` }}>
-//     <div className="container">
-//       <LinkHero>Restaurantes</LinkHero>
-//       <Img src={heroLogo} />
-//       <LinkHero>0 produto(s) no carrinho</LinkHero>
-//     </div>
-//   </CardHeader>
-// )
