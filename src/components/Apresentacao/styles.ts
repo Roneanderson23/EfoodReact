@@ -2,16 +2,20 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Imagem = styled.div`
+  display: block;
   width: 100%;
   height: 280px;
   color: ${cores.corSubTitulo};
+
+  background-repeat: no-repeat;
+  background-size: center;
+  background-size: 100%;
 
   h2 {
     padding-top: 25px;
     width: 101px;
     height: 33.25px;
-    margin-left: 170px;
-    margin-bottom: 190px;
+    margin-bottom: 140px;
     font-family: Roboto;
     font-weight: 100;
     font-size: 32px;
@@ -22,8 +26,7 @@ export const Imagem = styled.div`
   h3 {
     width: 676px;
     height: 33.25px;
-    margin-left: 170px;
-    margin-bottom: 62px;
+    margin-bottom: 32px;
     font-family: Roboto;
     font-weight: 900;
     font-size: 32px;

@@ -25,16 +25,16 @@ export const Titulo = styled.h3`
   margin: 8px;
 `
 export const Descricao = styled.p`
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.5px;
   display: block;
   padding-top: 16px;
   padding-bottom: 16px;
   border-color: ${cores.rosa};
   margin: 8px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
 `
 export const SubCard = styled.div`
   border-width: 0px 1px 1px 1px;

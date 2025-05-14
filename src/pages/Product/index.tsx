@@ -1,68 +1,65 @@
 // import { useParams } from 'react-router-dom'
 
 import Apresentacao from '../../components/Apresentacao'
-import Footer from '../../components/Footer'
-import ProductsList from '../../components/ProductsList'
-import Efood from '../../models'
-
-import pizza from '../../assets/img/pizza 1.5x.png'
-import logoNota from '../../assets/img/nota.png'
+import ProdutosList from '../../components/ProdutosList'
 import Hero from '../../components/Hero'
+import Footer from '../../components/Footer'
 
-const Product = () => {
-  // const { id } = useParams()
+import pizza from '../../assets/img/pizza.png'
+import Restaurante from '../../model'
 
-  const restaurante: Efood[] = [
-    {
-      id: 1,
-      title: 'Hioki Sushi',
-      infos: [],
-      image: pizza,
-      nota: logoNota,
-      description:
-        'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-      button: 'Adicionar ao carrinho'
-    },
-    {
-      id: 2,
-      title: 'Hioki Sushi',
-      infos: [],
-      image: pizza,
-      nota: logoNota,
-      description:
-        'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-      button: 'Adicionar ao carrinho'
-    },
-    {
-      id: 3,
-      title: 'Hioki Sushi',
-      infos: [],
-      image: pizza,
-      nota: logoNota,
-      description:
-        'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-      button: 'Adicionar ao carrinho'
-    },
-    {
-      id: 4,
-      title: 'Hioki Sushi',
-      infos: [],
-      image: pizza,
-      nota: logoNota,
-      description:
-        'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-      button: 'Adicionar ao carrinho'
-    }
-  ]
+const efood: Restaurante[] = [
+  {
+    id: 1,
+    title: 'Pizza Marguerita',
+    image: pizza,
+    description:
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
+  },
+  {
+    id: 2,
+    title: 'Pizza Marguerita',
+    image: pizza,
+    description:
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
+  },
+  {
+    id: 3,
+    title: 'Pizza Marguerita',
+    image: pizza,
+    description:
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
+  },
+  {
+    id: 4,
+    title: 'Pizza Marguerita',
+    image: pizza,
+    description:
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
+  },
+  {
+    id: 5,
+    title: 'Pizza Marguerita',
+    image: pizza,
+    description:
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
+  },
+  {
+    id: 6,
+    title: 'Pizza Marguerita',
+    image: pizza,
+    description:
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!'
+  }
+]
 
-  return (
-    <>
-      <Hero />
-      <Apresentacao />
-      <ProductsList efood={restaurante} />
-      <Footer />
-    </>
-  )
-}
+const Product = () => (
+  <>
+    <Hero />
+    <Apresentacao />
+    <ProdutosList efood={efood} />
+    <Footer />
+  </>
+)
 
 export default Product
