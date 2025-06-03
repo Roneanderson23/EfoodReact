@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export const cores = {
   branca: '#FFFFFF',
   rosa: '#E66767',
-  corTituloEbotaoCard: '#FFEBD9',
+  botaoCard: '#FFEBD9',
   corSubTitulo: '#FFFFFF',
   corDeFundo: '#00000080',
   corFundoContainer: '#FFF8F2'

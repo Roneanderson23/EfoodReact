@@ -5,9 +5,11 @@ export const CardHeader = styled.div`
   display: flex;
   align-items: center;
   height: 186px;
+  display: flex;
+  justify-content: space-between;
 
   a {
-    margin-left: 171px;
+    // margin-right: 16px;
     text-decoration: none;
     color: ${cores.rosa};
   }
@@ -16,7 +18,7 @@ export const CardHeader = styled.div`
 export const Img = styled.img`
   width: 125px;
   height: 57.5px;
-  margin-left: 172px;
+  margin: 0 auto;
 `
 export const Links = styled.ul`
   display: flex;

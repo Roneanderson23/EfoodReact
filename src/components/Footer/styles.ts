@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { cores } from '../../styles'
 // import { cores } from '../../styles'
 
 export const CardFooter = styled.div`
@@ -18,6 +19,7 @@ export const Descricao = styled.p`
   line-height: 100%;
   letter-spacing: 1px;
   text-align: center;
+  color: ${cores.rosa};
 `
 export const Logo = styled.img`
   margin: auto;

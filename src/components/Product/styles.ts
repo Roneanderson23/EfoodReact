@@ -62,7 +62,7 @@ export const Button = styled.button`
   border: none;
   cursor: pointer;
   background-color: ${cores.rosa};
-  color: ${cores.corTituloEbotaoCard};
+  color: ${cores.botaoCard};
 `
 
 export const Infos = styled.div`

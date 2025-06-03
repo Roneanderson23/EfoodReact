@@ -12,7 +12,7 @@ export const Section = styled.div`
 `
 export const Quadrado = styled.div`
   h2 {
-    padding-top: 8px;
+    padding-top: 4px;
     margin-bottom: 8px;
     font-family: Roboto;
     font-weight: 900;
@@ -32,16 +32,11 @@ export const CardProdutos = styled.div`
 `
 export const DescriCard = styled.p`
   width: 304px;
-  height: 88px;
+  height: 54px;
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 1px;
   color: ${cores.branca};
-`
-export const BotaoProdutos = styled.button`
-  width: 100%;
-  height: 24px;
-  margin-top: 8px;
 `
