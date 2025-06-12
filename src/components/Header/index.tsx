@@ -1,15 +1,20 @@
-import { Img, VetorHero, Title } from './styles'
+import { HeaderFundo, LinkItem, Links } from './styles'
 
-import vetor from '../../assets/img/Vector-1.png'
-import logoHero from '../../assets/img/logo.png'
+import logo from '../../assets/img/logo.png'
 
-const Hero = () => (
-  <>
-    <VetorHero style={{ backgroundImage: `url(${vetor})` }}>
-      <Img src={logoHero} />
-      <Title>Viva experiências gastronômicas no conforto da sua casa</Title>
-    </VetorHero>
-  </>
+const Header = () => (
+  <HeaderFundo>
+    <nav>
+      <Links>
+        <LinkItem>
+          <img src={logo} alt="efood" />
+        </LinkItem>
+        <LinkItem>
+          <a>Viva experiências gastronômicas no conforto da sua casa</a>
+        </LinkItem>
+      </Links>
+    </nav>
+  </HeaderFundo>
 )
 
-export default Hero
+export default Header

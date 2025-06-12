@@ -3,70 +3,49 @@ import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
-  background: ${cores.branca};
+  background-color: ${cores.branca};
   margin-bottom: 48px;
   position: relative;
+  // border-width: 0px 1px 1px 1px;
+  // border-style: solid;
+  // border-color: rgba(230, 103, 103, 1);
 
   ${TagContainer} {
     margin-right: 8px;
   }
 `
-
-export const Nota = styled.img`
-  width: 55px;
-  height: 21px;
-  margin-top: 14px;
-  margin-bottom: 16px;
-  display: flex;
-`
 export const Titulo = styled.h3`
-  font-weight: bold;
-  font-size: 18px;
-  margin: 8px;
-`
-export const Descricao = styled.p`
-  display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  border-color: ${cores.rosa};
-  margin: 8px;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0.5px;
-`
-export const SubCard = styled.div`
-  border-width: 0px 1px 1px 1px;
-  border-style: solid;
-  padding-top: 2px;
-`
-
-export const MiniCard = styled.div`
-  width: 55px;
-  height: 21px;
-  margin-left: 400px;
-  display: flex;
-  padding-top: 16px;
-`
-export const Button = styled.button`
-  width: 30%;
-  padding: 8px;
-  margin: 8px;
   font-family: Roboto;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 100%;
   letter-spacing: 1px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  background-color: ${cores.rosa};
-  color: ${cores.botaoCard};
+  margin-top: 16px;
+  margin-bottom: 8px;
+  display: flex;
 `
-
+export const Descricao = styled.p`
+  font-size: 14px;
+  line-heigth: 22px;
+  display: block;
+  margin-top: 16px;
+  padding: 8px;
+`
+export const Notas = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+`
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+`
+export const MiniCard = styled.div`
+  top: 0px;
+  padding: 8px;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(230, 103, 103, 1);
 `

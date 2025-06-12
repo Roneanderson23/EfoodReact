@@ -1,42 +1,38 @@
+import Button from '../Button'
 import Tag from '../Tag'
-import {
-  Card,
-  Descricao,
-  Titulo,
-  SubCard,
-  Button,
-  Nota,
-  MiniCard,
-  Infos
-} from './styles'
+
+import { Card, Descricao, Titulo, Notas, Infos, MiniCard } from './styles'
 
 type Props = {
   title: string
+  category: string
+  description: string
   infos: string[]
   image: string
-  nota: string
-  description: string
-  button: string
 }
 
-const Product = ({ title, infos, image, description, button, nota }: Props) => (
+const Product = ({ category, description, image, infos, title }: Props) => (
   <Card>
-    <img src={image} />
+    <img src={image} alt={title} />
     <Infos>
       {infos.map((info) => (
-        <Tag size="big" key={info}>
-          {info}
-        </Tag>
+        <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <SubCard>
-      <MiniCard>
-        <Nota src={nota} />
-      </MiniCard>
-      <Titulo>{title} </Titulo>
+    <MiniCard>
+      <Notas>
+        <Titulo>{title}</Titulo>
+        <a>{category}</a>
+      </Notas>
       <Descricao>{description}</Descricao>
-      <Button>{button}</Button>
-    </SubCard>
+      <Button
+        type="link"
+        to="/produto"
+        title="clique aqui para aproveitar essa oferta"
+      >
+        Saiba mais
+      </Button>
+    </MiniCard>
   </Card>
 )
 
