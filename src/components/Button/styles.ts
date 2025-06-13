@@ -24,4 +24,7 @@ export const ButtoLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   margin: 8px;
+  padding: 6px;
+  margin-bottom: 8px;
+  display: inline-block;
 `

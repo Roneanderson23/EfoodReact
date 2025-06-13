@@ -22,7 +22,7 @@ const Product = ({ category, description, image, infos, title }: Props) => (
     <MiniCard>
       <Notas>
         <Titulo>{title}</Titulo>
-        <a>{category}</a>
+        <img src={category} />
       </Notas>
       <Descricao>{description}</Descricao>
       <Button
