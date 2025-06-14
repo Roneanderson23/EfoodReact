@@ -3,6 +3,7 @@ import Tag from '../Tag'
 
 import { Card, Descricao, Titulo, Notas, Infos, MiniCard } from './styles'
 
+//tipagem das const Product
 type Props = {
   title: string
   category: string
@@ -11,6 +12,7 @@ type Props = {
   image: string
 }
 
+// produto do card de apresentação
 const Product = ({ category, description, image, infos, title }: Props) => (
   <Card>
     <img src={image} alt={title} />
@@ -27,7 +29,7 @@ const Product = ({ category, description, image, infos, title }: Props) => (
       <Descricao>{description}</Descricao>
       <Button
         type="link"
-        to="/produto"
+        to="/categories"
         title="clique aqui para aproveitar essa oferta"
       >
         Saiba mais
