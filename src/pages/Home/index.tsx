@@ -1,9 +1,9 @@
-import { Efood } from '../../../models/Efood'
-import ProductList from '../../ProductList'
+import { Efood } from '../../models/Efood'
+import ProductList from '../../components/ProductList'
 
-import nota from '../../../assets/img/nota.png'
-import shushi from '../../../assets/img/shushi.png'
-import macarrao from '../../../assets/img/macarrao.png'
+import nota from '../../assets/img/nota.png'
+import shushi from '../../assets/img/shushi.png'
+import macarrao from '../../assets/img/macarrao.png'
 
 const restaurante: Efood[] = [
   {
@@ -64,7 +64,11 @@ const restaurante: Efood[] = [
 
 const Home = () => (
   <>
-    <ProductList title={''} background={'blue'} efood={restaurante} />
+    <ProductList
+      title={'inicio da pagina'}
+      background={'blue'}
+      efood={restaurante}
+    />
   </>
 )
 

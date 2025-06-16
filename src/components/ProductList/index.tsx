@@ -2,10 +2,6 @@ import { Efood } from '../../models/Efood'
 import Product from '../Product'
 import { Container, List } from './styles'
 
-// import nota from '../../assets/img/nota.png'
-// import fundo from '../../assets/img/shushi.png'
-// import imgFundo from '../../assets/img/macarrao.png'
-
 // Tipagem cores do card
 export type Props = {
   title: string
