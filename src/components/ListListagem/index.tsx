@@ -1,6 +1,7 @@
 import { Efood } from '../../models/Efood'
 import Listagem from '../Listagem'
-import { Container, List } from '../ProductList/styles'
+import { Container } from '../ProductList/styles'
+import { ListItens } from './styles'
 
 export type Props = {
   title: string
@@ -9,12 +10,12 @@ export type Props = {
 }
 
 // Carregamento dos produto do card Listagem
-const ProductListagem = ({ background, efoodList, title }: Props) => (
+const ListListagem = ({ background, efoodList, title }: Props) => (
   <>
     <Container background={background}>
       <div className="container">
         <h2>{title}</h2>
-        <List>
+        <ListItens>
           {efoodList.map((efoodList) => (
             <Listagem
               key={efoodList.id}
@@ -23,10 +24,10 @@ const ProductListagem = ({ background, efoodList, title }: Props) => (
               title={efoodList.title}
             />
           ))}
-        </List>
+        </ListItens>
       </div>
     </Container>
   </>
 )
 
-export default ProductListagem
+export default ListListagem

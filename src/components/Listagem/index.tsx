@@ -1,4 +1,4 @@
-import { Container, Itens, ListGem } from './styles'
+import { Itens, ListGem } from './styles'
 
 //tipagem do tipos card
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 
 const Listagem = ({ image, title, description }: Props) => (
   <>
-    <Container className="container">
+    <div className="container">
       <ListGem>
         <Itens>
           <img src={image} alt="fundo" />
@@ -18,7 +18,7 @@ const Listagem = ({ image, title, description }: Props) => (
           <button>Adicionar ao carrinho</button>
         </Itens>
       </ListGem>
-    </Container>
+    </div>
   </>
 )
 
