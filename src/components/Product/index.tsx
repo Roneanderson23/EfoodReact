@@ -12,7 +12,7 @@ type Props = {
   image: string
 }
 
-// produto do card de apresentação
+// produto do card da primeira lista do home
 const Product = ({ category, description, image, infos, title }: Props) => (
   <Card>
     <img src={image} alt={title} />
@@ -29,7 +29,7 @@ const Product = ({ category, description, image, infos, title }: Props) => (
       <Descricao>{description}</Descricao>
       <Button
         type="link"
-        to="/categories"
+        to="product/:id"
         title="clique aqui para aproveitar essa oferta"
       >
         Saiba mais

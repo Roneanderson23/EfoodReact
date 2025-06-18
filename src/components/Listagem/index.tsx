@@ -7,6 +7,7 @@ type Props = {
   image: string
 }
 
+//lista do card da 2 parte do efood
 const Listagem = ({ image, title, description }: Props) => (
   <>
     <div className="container">

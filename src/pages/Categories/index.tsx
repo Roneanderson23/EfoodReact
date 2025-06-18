@@ -7,3 +7,4 @@ const Categories = () => (
 )
 
 export default Categories
+// estrutura para ser aoroveitada no estudo em andamento

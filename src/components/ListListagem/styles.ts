@@ -12,7 +12,7 @@ export const ListItens = styled.ul`
   }
 
   h3 {
-    width: 124px;
+    width: 100%;
     height: 19px;
     margin: 8px;
     font-family: Roboto;

@@ -43,6 +43,8 @@ export const Infos = styled.div`
   right: 16px;
 `
 export const MiniCard = styled.div`
+  width: 472px;
+  height: 272px;
   padding: 8px;
   border-width: 0px 1px 1px 1px;
   border-style: solid;
