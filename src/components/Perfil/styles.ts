@@ -1,17 +1,13 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+// import { cores } from '../../styles'
 
-export const Imagem = styled.div`
-  display: block;
-  width: 100%;
+export const Image = styled.div`
   height: 280px;
-  color: ${cores.corTitulo};
-
-  background-repeat: no-repeat;
-  background-size: center;
-  background-size: 100%;
+  color: ${cores.branca};
 
   h2 {
+    display: block;
     padding-top: 25px;
     width: 101px;
     height: 33.25px;

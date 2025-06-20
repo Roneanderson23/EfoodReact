@@ -45,5 +45,9 @@ export const ListItens = styled.ul`
     margin: 8px;
     height: 24px;
     color: ${cores.rosa};
+    background-color: ${cores.fundo};
+    border: none;
   }
 `
+
+//button do campo card parte 2

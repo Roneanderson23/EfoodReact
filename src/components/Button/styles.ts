@@ -5,7 +5,7 @@ import { cores } from '../../styles'
 
 export const ButtonContainer = styled.button`
   color: ${cores.branca};
-  background-color: ${cores.rosa};
+  background-color: ${cores.fundo};
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;

@@ -1,16 +1,16 @@
-import { Imagem } from './styles'
+import { Image } from './styles'
 
 import img from '../../assets/img/fundo.png'
 
 const Perfil = () => (
-  <div>
-    <Imagem style={{ backgroundImage: `url(${img})` }}>
+  <>
+    <Image style={{ backgroundImage: `url(${img})` }}>
       <div className="container">
         <h2>Italiana</h2>
         <h3>La Dolce Vita Trattoria</h3>
       </div>
-    </Imagem>
-  </div>
+    </Image>
+  </>
 )
 
 export default Perfil

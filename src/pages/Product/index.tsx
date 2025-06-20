@@ -1,10 +1,11 @@
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
 import Perfil from '../../components/Perfil'
 import ProductListagem from '../../components/ListListagem'
 import { Efood } from '../../models/Efood'
 
 import nota from '../../assets/img/nota.png'
 import pizza from '../../assets/img/pizza.png'
+import Apresentacao from '../../components/Apresentacao'
 
 //Lista de produto sendo chamando da listagem
 const efoodList: Efood[] = [
@@ -66,10 +67,11 @@ const efoodList: Efood[] = [
 
 //Rotas dos components
 const Product = () => {
-  const { id } = useParams()
+  // const { id } = useParams()
 
   return (
     <>
+      <Apresentacao />
       <Perfil />
       <ProductListagem efoodList={efoodList} title={''} background={'blue'} />
     </>

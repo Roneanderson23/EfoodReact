@@ -4,6 +4,7 @@ import ProductList from '../../components/ProductList'
 import nota from '../../assets/img/nota.png'
 import shushi from '../../assets/img/shushi.png'
 import macarrao from '../../assets/img/macarrao.png'
+import Header from '../../components/Header'
 
 const restaurante: Efood[] = [
   {
@@ -64,11 +65,8 @@ const restaurante: Efood[] = [
 
 const Home = () => (
   <>
-    <ProductList
-      title={'inicio da pagina'}
-      background={'blue'}
-      efood={restaurante}
-    />
+    <Header />
+    <ProductList title={''} background={'blue'} efood={restaurante} />
   </>
 )
 
