@@ -1,6 +1,6 @@
 import { HeaderFundo, LinkItem, Links } from './styles'
 
-import logo from '../../assets/img/logo.png'
+import logo from '../../assets/logo.png'
 
 const Header = () => (
   <HeaderFundo>

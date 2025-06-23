@@ -10,7 +10,7 @@ export const ButtonContainer = styled.button`
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-align: center;
 `
 export const ButtoLink = styled(Link)`
@@ -20,7 +20,7 @@ export const ButtoLink = styled(Link)`
   font-weight: 700;
   font-size: 14px;
   line-height: 100%;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
   text-align: center;
   text-decoration: none;
   margin: 8px;

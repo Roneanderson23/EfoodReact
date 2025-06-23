@@ -1,9 +1,9 @@
 import { Efood } from '../../models/Efood'
 import ProductList from '../../components/ProductList'
 
-import nota from '../../assets/img/nota.png'
-import shushi from '../../assets/img/shushi.png'
-import macarrao from '../../assets/img/macarrao.png'
+import nota from '../../assets/nota.png'
+import shushi from '../../assets/shushi.png'
+import macarrao from '../../assets/macarrao.png'
 import Header from '../../components/Header'
 
 const restaurante: Efood[] = [

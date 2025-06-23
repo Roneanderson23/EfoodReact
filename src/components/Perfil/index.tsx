@@ -1,6 +1,6 @@
 import { Image } from './styles'
 
-import img from '../../assets/img/fundo.png'
+import img from '../../assets/fundo.png'
 
 const Perfil = () => (
   <>

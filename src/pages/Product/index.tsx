@@ -3,8 +3,8 @@ import Perfil from '../../components/Perfil'
 import ProductListagem from '../../components/ListListagem'
 import { Efood } from '../../models/Efood'
 
-import nota from '../../assets/img/nota.png'
-import pizza from '../../assets/img/pizza.png'
+import nota from '../../assets/nota.png'
+import pizza from '../../assets/pizza.png'
 import Apresentacao from '../../components/Apresentacao'
 
 //Lista de produto sendo chamando da listagem

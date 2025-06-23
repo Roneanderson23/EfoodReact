@@ -1,6 +1,6 @@
-import redeSociais from '../../assets/img/redes sociais.png'
-import logo from '../../assets/img/logo.png'
-import logoFundo from '../../assets/img/fundo-1.png'
+import redeSociais from '../../assets/redes sociais.png'
+import logo from '../../assets/logo.png'
+import logoFundo from '../../assets/fundo-1.png'
 
 import { CardFooter, Descricao, Logo, LogoTwo } from './styles'
 

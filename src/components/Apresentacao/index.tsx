@@ -1,7 +1,7 @@
 import { Item, Itens } from './styles'
 
-import img from '../../assets/img/logo.png'
-import fundo from '../../assets/img/vetor_fundo.png'
+import img from '../../assets/logo.png'
+import fundo from '../../assets/vetor_fundo.png'
 import { Link } from 'react-router-dom'
 
 const Apresentacao = () => (
