@@ -7,4 +7,4 @@ const Categories = () => (
 )
 
 export default Categories
-// estrutura para ser aoroveitada no estudo em andamento
+// estrutura para ser aproveitada no estudo em andamento

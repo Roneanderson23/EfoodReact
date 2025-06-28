@@ -21,9 +21,13 @@ export const Modal = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+
+  &.visivel {
+    display: flex;
+  }
 
   .overlay {
     position: absolute;
@@ -32,8 +36,7 @@ export const Modal = styled.div`
     width: 100%;
     height: 100%;
     transition-delay: 2ms;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 40%;
+    background-color: rgba(0, 0, 0, 0.83);
   }
 `
 

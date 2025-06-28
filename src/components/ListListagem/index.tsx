@@ -3,6 +3,8 @@ import Listagem from '../Listagem'
 import { Container } from '../ProductList/styles'
 import { ListItens } from './styles'
 
+import pizza from '../../assets/pizza.png'
+
 export type Props = {
   title: string
   background: 'blue' | 'red'
@@ -19,9 +21,8 @@ const ListListagem = ({ background, efoodList, title }: Props) => (
           {efoodList.map((efoodList) => (
             <Listagem
               key={efoodList.id}
-              description={efoodList.description}
-              image={efoodList.image}
-              title={efoodList.title}
+              defaultCover={pizza}
+              name={'Marguerita '}
             />
           ))}
         </ListItens>
