@@ -1,9 +1,9 @@
-import { Efood } from '../../models/Efood'
 import Listagem from '../Listagem'
 import { Container } from '../ProductList/styles'
 import { ListItens } from './styles'
 
 import pizza from '../../assets/pizza.png'
+import { Efood } from '../../pages/Home'
 
 export type Props = {
   title: string

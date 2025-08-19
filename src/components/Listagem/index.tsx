@@ -1,17 +1,11 @@
+import { useState } from 'react'
 import { Itens, ListGem, Modal, ModalContent } from './styles'
+
+import { GalleryItem } from '../../pages/Home'
 
 import pizza from '../../assets/pizza.png'
 import close from '../../assets/close 1.png'
 import { ButtonContainer } from '../Button/styles'
-import { useState } from 'react'
-
-//interface do tipos card
-interface GalleryItem {
-  type: string
-  description: string
-  image: string
-  id: number
-}
 
 //tipagem mock de array
 const mock: GalleryItem[] = [
@@ -42,8 +36,6 @@ const Listagem = ({ defaultCover }: Props) => {
     id: 1,
     type: 'pizza Marguerita'
   })
-  // const [modalEstaAberto, SetmodalEstaAberto] = useState(false)
-  // const [modalImage, setModalImage] = useState('')
 
   const getMediaCover = (item: GalleryItem) => {
     if (item.type === 'image') return item.image
@@ -75,8 +67,6 @@ const Listagem = ({ defaultCover }: Props) => {
                   image: media.image,
                   type: media.type
                 })
-                // SetmodalEstaAberto(true)
-                // setModalImage(media.image)
               }}
             >
               <img

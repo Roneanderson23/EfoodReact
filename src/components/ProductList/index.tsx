@@ -1,4 +1,4 @@
-import { Efood } from '../../models/Efood'
+import { Efood } from '../../pages/Home'
 import Product from '../Product'
 import { Container, List } from './styles'
 
@@ -10,25 +10,40 @@ export type Props = {
 }
 
 // lista de produtos do Product que esta em components
-const ProductList = ({ background, title, efood }: Props) => (
-  <Container background={background}>
-    <div className="container">
-      <h2>{title}</h2>
-      <List>
-        {efood.map((efood) => (
-          <Product
-            key={efood.id}
-            category={efood.category}
-            description={efood.description}
-            image={efood.image}
-            infos={efood.infos}
-            title={efood.title}
-          />
-        ))}
-      </List>
-    </div>
-  </Container>
-)
+const ProductList = ({ background, title, efood }: Props) => {
+  const getEfoodTags = (efood: Efood) => {
+    const tags = []
+
+    if (efood.destacado) {
+      tags.push('Destaque da semana')
+    }
+
+    if (efood.tipo) {
+      tags.push(efood.tipo)
+    }
+
+    return tags
+  }
+  return (
+    <Container background={background}>
+      <div className="container">
+        <h2>{title}</h2>
+        <List>
+          {efood.map((efood) => (
+            <Product
+              key={efood.id}
+              type={getEfoodTags(efood)}
+              title={efood.titulo}
+              nota={efood.avaliacao}
+              description={efood.descricao}
+              image={efood.capa}
+            />
+          ))}
+        </List>
+      </div>
+    </Container>
+  )
+}
 
 export default ProductList
 

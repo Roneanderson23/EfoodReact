@@ -1,31 +1,44 @@
 import Button from '../Button'
-import Tag from '../Tag'
 
-import { Card, Descricao, Titulo, Notas, Infos, MiniCard } from './styles'
+// import capa from '../../assets/shushi.png'
+import star from '../../assets/star.png'
+
+import {
+  Card,
+  Descricao,
+  Nota,
+  Section,
+  Star,
+  Titulo,
+  MiniCard,
+  Destaque
+} from './styles'
+import Tag from '../Tag'
 
 //tipagem das const Product
 type Props = {
   title: string
-  category: string
+  nota: number
   description: string
-  infos: string[]
+  type: string[]
+  destaque?: boolean
   image: string
 }
 
 // produto do card da primeira lista do home
-const Product = ({ category, description, image, infos, title }: Props) => (
-  <Card>
-    <img src={image} alt={title} />
-    <Infos>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
-    </Infos>
-    <MiniCard>
-      <Notas>
+const Product = ({ description, image, title, nota, type }: Props) => (
+  <Card style={{ backgroundImage: `url(${image})` }}>
+    <Section>
+      <Destaque>
+        {type.map((info) => (
+          <Tag key={info}>{info}</Tag>
+        ))}
+      </Destaque>
+      <MiniCard>
         <Titulo>{title}</Titulo>
-        <img src={category} />
-      </Notas>
+        <Nota>{nota}</Nota>
+        <Star src={star} alt="estrela" />
+      </MiniCard>
       <Descricao>{description}</Descricao>
       <Button
         type="link"
@@ -34,7 +47,7 @@ const Product = ({ category, description, image, infos, title }: Props) => (
       >
         Saiba mais
       </Button>
-    </MiniCard>
+    </Section>
   </Card>
 )
 
